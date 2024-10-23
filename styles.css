@@ -1,0 +1,130 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-image: url(sand-background-image.png);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#Contenedor {
+    background-color: white;
+    width: 100vw;
+    max-width: 1225px;
+    padding: 60px;
+    border: 2px solid #e0e0e0;
+    margin: 20px auto;
+}
+
+.beneficio {
+    background-color: #F8FAFC;  /* Fondo para las celdas de beneficios */
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 1px solid #ddd;  /* Borde inferior solo para las celdas de beneficios */
+}
+
+/* Redondear esquinas específicas */
+#first{
+    border-top-left-radius: 10px;  /* Esquina superior izquierda */
+}
+
+#last {
+    border-bottom-left-radius: 10px;  /* Esquina inferior izquierda */
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border: none; /* Sin bordes para el resto de las celdas */
+}
+
+th {
+    font-weight: bold;
+    border-bottom: none;  /* No se aplica borde en el encabezado */
+}
+
+/* Borde inferior para las celdas que acompañan a los beneficios */
+tr .beneficio ~ td {
+    border-bottom: 1px solid #ddd;  /* Aplicar borde inferior a las celdas que siguen a los beneficios */
+}
+
+.Plan {
+    color: #3662E3;
+}
+
+.started {
+    font-weight: 600;
+    color: #3662E3; /* Aseguramos que el texto sea blanco */
+}
+
+.started2 {
+    font-weight: 600;
+    color: white; /* Aseguramos que el texto sea blanco */
+}
+
+.Precio {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+td:first-child {
+    width: 20%;
+}
+
+td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+    width: 12.5%;  /* Reducir el ancho de cada columna */
+}
+
+td:nth-child(4), .Plan-Popular-header {  /* Cambiar color de la cuarta columna */
+    background-color: #121826;  /* Fondo de la cuarta columna */
+    color: white;  /* Cambiar el color del texto para mejor contraste */
+}
+
+.Plan-Popular-header{
+    border-top-left-radius: 20px; /* Solo esquinas superiores redondeadas */
+    border-top-right-radius: 20px; /* Solo esquinas superiores redondeadas */
+    text-align: center; /* Centramos el texto en el encabezado */
+}
+
+#texto_p{
+    background-color: #3662E3;
+    color: white; /* Texto blanco */
+    display: inline-block; /* Para que el ancho se ajuste al contenido */
+    text-align: center; /* Centrar el texto horizontalmente */
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#descripcion {
+    margin: 0;
+    padding: 0;
+    width: 450px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4D5562;
+}
+
+/* Cambiar el fondo de la celda con id "amarillo" */
+#amarillo {
+    background-color: #E9A23B;  /* Color de fondo amarillo para la celda */
+    color: white;  /* Cambiar el texto a blanco */
+    border-bottom-left-radius: 20px;  /* Bordes redondeados */
+    border-bottom-right-radius: 20px;  /* Bordes redondeados */
+    text-align: center;  /* Centrar el texto */
+}
+
